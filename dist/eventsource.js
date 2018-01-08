@@ -1,5 +1,5 @@
 /*
-   * EventSource polyfill version 0.9.7
+   * EventSource polyfill version 1.0.0
    * Supported by sc AmvTek srl
    * :email: devel@amvtek.com
  */
@@ -274,7 +274,7 @@
                     }
                 }
 
-                if (datas.length) {
+                if (datas.length && evs.readyState != evs.CLOSED) {
                     // dispatch a new event
                     var event = new MessageEvent(eventType, datas.join('\n'), window.location.origin, this.lastEventId);
                     this.dispatchEvent(eventType, event);

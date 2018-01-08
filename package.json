@@ -1,9 +1,11 @@
 {
   "name": "@pirxpilot/eventsource-polyfill",
-  "version": "0.9.7",
+  "version": "1.0.0",
   "description": "A browser polyfill for W3C EventSource (http://www.w3.org/TR/eventsource/)",
   "main": "dist/browserify-eventsource.js",
-  "directories": { "doc": "docs" },
+  "directories": {
+    "doc": "docs"
+  },
   "files": [
     "dist/eventsource.js",
     "dist/browserify-eventsource.js"
